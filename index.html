@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <title>Redirecting...</title>
-    <!-- Replace the URL below with your new website address -->
-    <meta http-equiv="refresh" content="0; URL=https://google.com">
-    <!-- Tells search engines where the actual page lives -->
-    <link rel="canonical" href="https://google.com">
-  </head>
-  <body>
-    <p>If you are not redirected automatically, follow this <a href="https://google.com">link to the new site</a>.</p>
-  </body>
+    <script type="text/javascript">
+        // 1. List your target websites in an array
+        const websites = [
+            "https://www.google.com",
+            "https://wikipedia.org"
+        ];
+
+        // 2. Pick a random website from the array
+        const randomUrl = websites[Math.floor(Math.random() * websites.length)];
+
+        // 3. Redirect the browser to that website
+        window.location.replace(randomUrl);
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, please wait...</p>
+</body>
 </html>
